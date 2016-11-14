@@ -1,4 +1,6 @@
 import gulp from 'gulp';
+import runSequence from  'run-sequence';
+import del from 'del';
 import {
   browserSync,
   less,
@@ -11,8 +13,29 @@ gulp.task('watch',() => {
   gulp.watch('./less/**/*.less',['less']);
 });
 
-gulp.task('build', ['less']);
-gulp.task('dev', ['build','browsersync', 'watch']);
+gulp.task('clean', () => {
+  return del('./dist');
+});
+
+gulp.task('static', () => {
+  return gulp.src('./static/**')
+    .pipe(gulp.dest('./dist'));
+});
+ 
+gulp.task('build',(done) => {
+  runSequence(
+    'clean',
+    ['static','less'],
+    done
+  );
+});
+
+gulp.task('dev', (done) => {
+  runSequence(
+    'build',
+    ['browsersync', 'watch']
+  );
+});
 
 
 
