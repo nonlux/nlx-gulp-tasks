@@ -1,0 +1,12 @@
+{
+  "generator-prj": {
+    "projectName": "nlx-gulp-tasks",
+    "isGithub": true,
+    "description": "my gulp tasks collection",
+    "projectType": "javascript",
+    "shortName": "glpt",
+    "isBabel": true,
+    "isEslint": true,
+    "isWebpack": false
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "nlx-gulp-tasks",
+  "version": "0.0.1",
+  "description": "my gulp tasks collection",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "",
+    "ncu": "ncu",
+    "babel": "babel",
+    "babel-build": "babel src --out-dir lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nonlux/nlx-gulp-tasks.git"
+  },
+  "keywords": [],
+  "author": "nonlux <nonluxi@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nonlux/nlx-gulp-tasks/issues"
+  },
+  "homepage": "https://github.com/nonlux/nlx-gulp-tasks",
+  "devDependencies": {
+    "nlx-babel-config": "0.0.4",
+    "nlx-eslint-config": "0.0.2",
+    "npm-check-updates": "^2.8.6"
+  }
+}
