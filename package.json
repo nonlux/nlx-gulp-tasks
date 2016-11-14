@@ -1,6 +1,6 @@
 {
   "name": "nlx-gulp-tasks",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "my gulp tasks collection",
   "main": "lib/index.js",
   "scripts": {
