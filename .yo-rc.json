@@ -7,6 +7,8 @@
     "shortName": "glpt",
     "isBabel": true,
     "isEslint": true,
-    "isWebpack": false
+    "isWebpack": false,
+    "isReact": false,
+    "isGulp": false
   }
 }

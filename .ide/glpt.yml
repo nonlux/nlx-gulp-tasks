@@ -1,8 +1,0 @@
-name: glpt
-root: /home/nonlux/src/nlx-gulp-tasks
-pre: emacs --eval "(setq server-name \"glpt\")" --daemon
-startup_window: editor
-windows:
-  - none: ''
-  - editor: emacsclient -s glpt ./
-  - zsh: ''

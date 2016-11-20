@@ -1,0 +1,17 @@
+{
+  "devDependencies": [
+    "browser-sync",
+    "del",
+    "gulp",
+    "gulp-load-plugins",
+    "gulp-postcss",
+    "gulp-rename",
+    "gulp-sourcemaps",
+    "less",
+    "nlx-webpack-config",
+    "postcss-cssnext",
+    "postcss-less-engine",
+    "run-sequence",
+    "strip-ansi"
+  ]
+}

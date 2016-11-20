@@ -12,7 +12,7 @@ gulp.task('less', less);
 
 gulp.task('watch',() => {
   gulp.watch('./less/**/*.less',['less']);
-  gulp.watch('./static/**/*',['static']);
+  gulp.watch('./static/**',['static']);
 });
 
 gulp.task('clean', () => {
