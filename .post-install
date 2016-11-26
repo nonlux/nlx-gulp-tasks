@@ -1,0 +1,3 @@
+#!/bin/bash
+
+ln  $MODULE_PATH/gulpfile.js  $DEST_PATH/gulpfile.js
