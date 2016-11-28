@@ -13,8 +13,8 @@ export default function browserSync(config = {}) {
   bundler.plugin('done', function (stats) {
     if (stats.hasErrors() || stats.hasWarnings()) {
       return browserSync.sockets.emit('fullscreen:message', {
-        title: "Webpack Error:",
-        body:  stripAnsi(stats.toString()),
+        title: 'Webpack Error:',
+        body: stripAnsi(stats.toString()),
         timeout: 100000
       });
     }
@@ -22,10 +22,10 @@ export default function browserSync(config = {}) {
   });
 
   const defaultConfig =  {
-    server: { baseDir: './dist'},
+    server: ['dist', 'bower_components'],
     files: [
-      './dist/**.html',
-      './dist/**.css',
+      '**.html',
+      '**.css',
     ],
     middleware: [
       webpackDevMiddleware(bundler, {
